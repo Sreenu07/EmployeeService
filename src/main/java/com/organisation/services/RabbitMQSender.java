@@ -19,8 +19,6 @@ public class RabbitMQSender {
 	private String routingkey;	
 	
 	public void send(EmployeeEvent employeeEvent) {
-		rabbitAmqpTemplate.convertAndSend(exchange, routingkey, employeeEvent);
-		System.out.println("Send msg = " + employeeEvent);
-	    
+		rabbitAmqpTemplate.convertAndSend(exchange, routingkey, employeeEvent);	    
 	}
 }
