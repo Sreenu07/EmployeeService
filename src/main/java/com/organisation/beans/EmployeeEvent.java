@@ -1,9 +1,5 @@
 package com.organisation.beans;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
-@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id", scope = EmployeeEvent.class)
 public class EmployeeEvent {
 	private String uuid;
 	private String eventName;
